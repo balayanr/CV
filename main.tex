@@ -4,6 +4,23 @@
 
 \documentclass[]{cv-roald}
 
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    urlcolor=\color{maincolor},
+}
+
+% Toggles:
+% Columbia - only for gaming-related companies
+% Natural languages in summary
+% SMT in summary
+% CFG and Formal Languages in skills
+% Praat in skills
+% Latex in skills
+
+
+
+
 \begin{document}
 \pagestyle{empty} %to remove the page numbers
 
@@ -15,19 +32,23 @@
 Toronto, ON \sep
 Canada}
 {\faMobile \hspace{\FAspace} +1 (647) 919-2140 \sep
-\faEnvelope \hspace{\FAspace} robert@balayanr.com \sep
-\faLinkedinSquare /in/balayanr \sep%
-\faGithub /balayanr %
+\href{mailto:robert@balayanr.com}{\faEnvelope} \hspace{\FAspace} \faSkype\hspace{\FAspace} robert@balayanr.com \sep
+\href{https://www.linkedin.com/in/balayanr/}{\faLinkedinSquare} \hspace{\FAspace} \href{https://github.com/balayanr}{\faGithub} \hspace{\FAspace} \href{https://www.facebook.com/balayanr}{\faFacebookSquare} \hspace{\FAspace} balayanr %
+}
+
+\hypersetup{
+    urlcolor=blue,
 }
 
 \textit{Recent University of Toronto graduate trying out Gradient Ascent IRL. Looking to work with Natural Language Processing and Machine Learning.}
 
 \section*{summary}
 \begin{tabitemize}
-    \item Experienced in Machine Learning, Natural Language Processing and Computational Linguistics, General AI Theory, and Knowledge Representation
-    \item Languages: Python, C, Java, Matlab, R
-    \item Frameworks and tools: NumPy, TensorFlow, keras, Hadoop, NLTK, Trifacta
-    \item Solid mathematical and statistical background
+    \item Experienced in Machine Learning, Natural Language Processing and Computational Linguistics, General AI Theory, and Knowledge Representation.
+    \item Programming Languages: Python, C, Java, Matlab, R, SQL.
+    \item Natural Languages: English, Russian, Armenian (Conversational), Japanese (Basic).
+    \item Frameworks and tools: NumPy, TensorFlow, keras, AWS, Hadoop, NLTK, \LaTeX.
+    \item Solid mathematical and statistical background.
 \end{tabitemize}
 
 \section*{education}
@@ -45,32 +66,63 @@ Canada}
                         \item Graph Theory and Algorithm Design
                         \item Statistics, Linear Algebra and Multivariable Calculus\newline
                     \end{tabitemize}
-                    Relevant Projects:
-                    \begin{tabitemize}
-                        \item CSC412 Solo Research Project: Exploiting Structure For Classification Of Handwritten Japanese Characters
-                        \item CSC384 Group Research Project: CSP Algorithm Analysis
-                    \end{tabitemize}
+%                    Relevant Projects:
+%                    \begin{tabitemize}
+%                        \item CSC412 Solo Research Project: Exploiting Structure For Classification Of Handwritten Japanese Characters
+%                        \item CSC384 Group Research Project: CSP Algorithm Analysis
+%                        \item CSC343 Solo Project: SQL-based course recommendation engine
+%                    \end{tabitemize}
                     \\[\vspacepar] % Start new row with this
 
-    2012-2014   &   \worktitle{Accelerated High School Completion \& University Transfer Program}{Columbia College, Vancouver, Canada}
-                    \newline Completed grades 11 and 12 in two semesters and then studied various first year science courses to later transfer to University of Toronto
-                    \begin{tabitemize}
-                        \item Studied basic Computer Science, Calculus and Introduction to Physics
-                        \item Created Video Gaming Club and hosted weekly meetings
-                    \end{tabitemize}
-                    \\[\vspacepar]
+%    2012-2014   &   \worktitle{Accelerated High School Completion \& University Transfer Program}{Columbia College, Vancouver, Canada}
+%                    \newline Completed grades 11 and 12 in two semesters and then studied various first year science courses to later transfer to University of Toronto
+%                    \begin{tabitemize}
+%                        \item Studied basic Computer Science, Calculus and Introduction to Physics
+%                        \item Created Video Gaming Club and hosted weekly meetings for 2 years
+%                    \end{tabitemize}
+%                    \\[\vspacepar]
+    2017-       &   \worktitle{Certifications}{Coursera}
+                    \newline Hadoop Platform and Application Framework, \href{https://www.coursera.org/account/accomplishments/verify/D6W6PEBPALWW}{License D6W6PEBPALWW}
 \end{tabularcv}
+
 
 
 \section*{skills and experiences}
 \begin{tabitemize}
-    \item High programming skills in Python and experience using Numpy, Tensorflow, NLTK, various SQL libraries and XML processing libraries. Experience programming in C/C++, Java, Matlab and R.
-    \item Experience designing both discriminative and generative models for image classification, voice recognition and language modeling.
+    \item 4+ years of experience \textbf{programming in Python}: from manipulating SQL databases to Neural Networks and Deep Learning using Numpy, TensorFlow and Keras to Chart parsing and word sense disambiguation using NLTK. This is my language of choice for both personal projects and research. Please see my most recent research project as an example "Exploiting Structure For Classification Of Handwritten Japanese Characters" (\href{https://github.com/balayanr/kanji_recognition_412}{Github}).
+    \item Additional experiences with \textbf{Machine Learning in Matlab} (statistical machine translation, acoustic perception, Hidden Markov Models, Mixture of Gaussians); limited experience with \textbf{low-level programming in C/C++} (Kernel extensions, file-system manipulation, computer graphics in OpenGL); limited experience with \textbf{Object-Oriented Programming in Java} (Android Application back-end development following the MVC paradigm, JDBM for PostgreSQL); basic \textbf{data analysis in R}.
+    \item Experience designing both discriminative and generative models for image classification, voice recognition and language modeling. Deep understanding of the Machine Learning theory and algorithms, as well as of limitations imposed by hardware.
     \item Experience with machine translation. Implemented IBM Model-1 and trained it on Hansard corpus for English-French translation.
-    \item Experience designing relational databases and implementing them in MySQL, PostgreSQL and SQLite. Experience managing data using Hadoop.
-    \item Experience building Context Free Grammars for abstractly defined languages as well as approximating natural languages. Experience analyzing speech recordings using Praat.
-    \item Experience typesetting research papers using \LaTeX\ language.
+    \item Experience designing relational databases and implementing them in MySQL, PostgreSQL and SQLite. Experience with \textbf{HDFS and HBase} as part of Hadoop Platform and Application Framework certificaton.
+    \item Experience building Context Free Grammars and Automatas for abstractly defined languages as well as approximating natural languages. Experience extending natural language CFGs with features and using these grammars for parsing with \href{http://www.cs.toronto.edu/~gpenn/ale.html}{The Attribute Logic Engine}.
+    %\item Experience analyzing speech recordings using Praat.
+    %\item Experience formatting publications and documents using \LaTeX.
+
 \end{tabitemize}
+\clearpage
+
+\section*{projects}
+\begin{tabularcv}
+    CSC412 & Solo Research Project: Exploiting Structure For Classification Of Handwritten Japanese Characters.
+    \begin{tabitemize}
+        \item Developed a parser for the \href{http://etlcdb.db.aist.go.jp/}{ETL} datasets.
+        \item Tested 4 different architectures with 2 different goals: direct kanji classification and multilabel classification of radicals that make up the kanji.
+        \item Used AWS EC2 p2.xlarge and c4.8xlarge instances to train the models in parallel.
+        \item Compiled the report in \LaTeX, generally following standards used for publication.
+        \item Published all source code and the report on \href{https://github.com/balayanr/kanji_recognition_412}{Github}
+    \end{tabitemize}\\[\vspacepar]
+    CSC384 & Group Research Project: CSP Algorithm Analysis
+    \begin{tabitemize}
+        \item Was the \textit{de facto} team leader
+        \item Provided the team with a selection of algorithms outside of the course's scope that would be interesting to analize. Final selection was iterative improvement, path consistency, and a tree-specific algorithms.
+        \item Regularly checked in on the other member's progress, helped if they had any problems.
+        \item Used SVN for subversion controll.
+        \item Compiled the report in \LaTeX.
+    \end{tabitemize}
+    \\[\vspacepar]
+    CSC343 & Solo Project: SQL-based course recommendation engine. \\[\vspacepar]
+    CSC321 & Solo Project: Face classification using AlexNet, implemented in TensorFlow. \\[\vspacepar]
+\end{tabularcv}
 
 \section*{languages}
 \begin{tabularcv}
@@ -81,11 +133,12 @@ Canada}
 \end{tabularcv}
 
 \section*{interests and hobbies}
-\textbf{Artificial Intelligence}: I have always been interested with AI and inspired by its portrayal in science fiction. It is my dream to work on implementing a general AI. \\
-\textbf{Sports}: I am an avid cyclist. I train with the University of Toronto Road Racing team and participate in various local cycling events. During my recent trip to Japan, I climbed Mount Fujiyama on bike.
+\textbf{Artificial Intelligence}: I have always been interested with AI and inspired by its portrayal in science fiction. It is my dream to work on implementing a general AI. One of the most interesting roadblocks to me is the way humans interact with AI: in science fiction it is almost always seamless, like talking to another person. Personally I have always had interest in Natural Languages, so this is one of the fields I would like to study in depth.\\
+\textbf{Sports}: I am an avid cyclist. I train with the University of Toronto Road Racing team and participate in various local cycling events. During my recent trip to Japan, I climbed Mount Fuji on bike and toured around the Kanto region.
 I also enjoy diving and have various advanced diving certifications. Recently developed interest in motorsports, regularly practice racing in simulations.\\
 \textbf{Traveling}: I enjoy traveling whenever I have the opportunity. I have visited many countries, including Japan, Spain, France, Italy, England, Germany, Egypt, Turkey, Georgia and Armenia. Lately, I have been traveling with my road bike and touring in the places I visit.\\
-\textbf{GunPla}: I enjoy building plastic model kits and have a collection of Gundam and Warhammer 40K figurines.\\
+\textbf{GunPla}: One of my favourite hobbies is building plastic model kits. Over time I have built dozens of kits and as a result have a collection of Mobile Suit Gundam and Warhammer 40K figurines.\\
 \textbf{Magic the Gathering}: I enjoy the card game as a challenge for building the best deck possible out of limited resources provided. Occasionally participate in tournaments.\\
+\textbf{Videogames}: I have interest in videogames of all genres, but my favourite games are mostly strategy-focused (Civilization, FTL: Faster Than Light, StarCraft 2).
 
 \end{document}

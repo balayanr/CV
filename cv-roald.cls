@@ -7,7 +7,7 @@
 % --------------------------------- %
 % Size of the margin
 \newlength{\margin}
-\setlength{\margin}{25mm}
+\setlength{\margin}{20mm}
 % Size of the left column
 \newlength{\leftcol}
 \setlength{\leftcol}{0.22\paperwidth}
@@ -16,7 +16,7 @@
 \setlength{\hdrheight}{38mm}
 % Vertical space between rows/paragraphs
 \newlength{\vspacepar}
-\setlength{\vspacepar}{0.4\baselineskip}
+\setlength{\vspacepar}{0.3\baselineskip}
 % Horizontal space before and after vertical bar (|) between address and contact details
 \newlength{\hspaddress}
 \setlength{\hspaddress}{1em}
@@ -32,7 +32,7 @@
 \RequirePackage{tikz} % Draw things, needed for the header
 \RequirePackage{xcolor} % Enables the use of colours
 \RequirePackage[margin= \margin]{geometry} % Adjust the margins of a page
-\defaultfontfeatures{ % Important to add, else fontawesome will not work with XeLaTeX 
+\defaultfontfeatures{ % Important to add, else fontawesome will not work with XeLaTeX
     Path = Fonts/}
 \RequirePackage{fontawesome} % Load cool icons, such as the linked in logo
 \RequirePackage{calc} % To calculate lengths, for example the skip after the header
@@ -60,19 +60,19 @@
 % --------------------------------- %
 %	 			FONTS 	 			%
 % --------------------------------- %
-\setmainfont{SourceSansPro}[ 
+\setmainfont{SourceSansPro}[
 	Path = Fonts/,
 	Extension = .otf ,
     UprightFont = *-Light,
     ItalicFont = *-LightIt,
-    BoldFont = *-Semibold,]    
+    BoldFont = *-Semibold,]
 
-\newfontfamily\titlefont{AdventPro}[ 
+\newfontfamily\titlefont{AdventPro}[
 	Path = Fonts/,
 	Extension = .ttf,
 	UprightFont = *-ExtraLight,
     BoldFont = *-SemiBold,
-    ]        
+    ]
 
 % --------------------------------- %
 %	 			COLORS	 			%
@@ -105,7 +105,7 @@
     \node[anchor=north, text=lightermain] at (address.south)  {#4};
   \end{tikzpicture}
   \vspace{\hdrskip}
-} 
+}
 
 % --------------------------------- %
 % 			TITLE FORMAT 			%
@@ -116,9 +116,9 @@
 \titlespacing*{\section}{0pt}{1.5ex plus 0.2ex minus .2ex}{-0.5ex plus .2ex}
 
 \newcommand{\worktitle}[2]{
-% #1 = Job or education title 
+% #1 = Job or education title
 % #2 = Company and location
-    {\bfseries\MakeUppercase{#1}}  
+    {\bfseries\MakeUppercase{#1}}
     {\newline\itshape #2}
 }
 
@@ -130,15 +130,14 @@
 	\tabularx{\textwidth}{@{}>{\raggedright\arraybackslash}p{\LeftColBody}@{}>{\raggedright\arraybackslash}p{\RightColBody}}}{
 	\endtabularx}
 
-% Use bullet point lists inside a tabular environment	
+% Use bullet point lists inside a tabular environment
 \newenvironment{tabitemize}{
 	\itemize}{
 	\vspace*{-\baselineskip}
-		\enditemize}	
+		\enditemize}
 
 % --------------------------------- %
 %		BODY TEXT OPTIONS			%
-% --------------------------------- %		
+% --------------------------------- %
 \setlength{\parindent}{0pt}	% Remove indent at the start of a new paragraph
-\setlength{\parskip}{\vspacepar} % adds extra vertical space between paragraphs	
-
+\setlength{\parskip}{\vspacepar} % adds extra vertical space between paragraphs
