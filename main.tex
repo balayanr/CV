@@ -14,7 +14,9 @@
 % Columbia - only for gaming-related companies
 % Natural languages in summary
 % SMT in summary
+% Toggles for all languages and experience qualifiers
 % CFG and Formal Languages in skills
+% Knowledge of NLP in skills
 % Praat in skills
 % Latex in skills
 % Videogames in interests
@@ -23,7 +25,7 @@
 \begin{document}
 \pagestyle{empty} %to remove the page numbers
 
-% This is the header of the first page, which contains your name and contact details. 
+% This is the header of the first page, which contains your name and contact details.
 % \sep inserts a | between items.
 % You can use FontAwesome icons and use \FAspace after a font awesome icon to insert a predefined horizontal space after a font awesome icon icon.
 \header{Robert}{Balayan}
@@ -32,9 +34,9 @@ Toronto, ON \sep
 Canada}
 {\faMobile \hspace{\FAspace} +1 (647) 919-2140 \sep
 \href{mailto:robert@balayanr.com}{\faEnvelope} \hspace{\FAspace} \faSkype\hspace{\FAspace} robert@balayanr.com \sep
-\href{https://www.linkedin.com/in/balayanr/}{\faLinkedinSquare} \hspace{\FAspace} \href{https://github.com/balayanr}{\faGithub} \hspace{\FAspace} \href{https://www.facebook.com/balayanr}{\faFacebookSquare} \hspace{\FAspace} balayanr %
+\href{https://www.linkedin.com/in/balayanr/}{\faLinkedinSquare} \hspace{\FAspace} \href{https://github.com/balayanr}{\faGithub} \hspace{\FAspace} \href{https://www.facebook.com/balayanr}{\faFacebookSquare} \hspace{\FAspace}\href{https://vk.com/yahhh_gf}{\faVk} \hspace{\FAspace} balayanr \FAspace  %
 }
-
+%\href{https://vk.com/yahhh_gf}{\faVk}\hspace{\FAspace} \href{twitter.com/yahhh_gf}{\faTwitterSquare}\hspace{\FAspace} \href{instragram.com/yahhh_gf}{\faInstragram} yahhh_gf
 \hypersetup{
     urlcolor=blue,
 }
@@ -44,7 +46,7 @@ Canada}
 \section*{summary}
 \begin{tabitemize}
     \item Experienced in Machine Learning, Natural Language Processing and Computational Linguistics, General AI Theory, and Knowledge Representation.
-    \item Programming Languages: Python, C, Java, Matlab, R, SQL.
+%    \item Programming Languages: Python, C, Java, Matlab, R, SQL.
     \item Natural Languages: English, Russian, Armenian (Conversational), Japanese (Basic).
     \item Frameworks and tools: NumPy, TensorFlow, keras, AWS, Hadoop, NLTK, \LaTeX.
     \item Solid mathematical and statistical background.
@@ -89,12 +91,20 @@ Canada}
 \section*{skills and experiences}
 \begin{tabitemize}
     \item 4+ years of experience \textbf{programming in Python}: from manipulating SQL databases to Neural Networks and Deep Learning using Numpy, TensorFlow and Keras to Chart parsing and word sense disambiguation using NLTK. This is my language of choice for both personal projects and research. Please see my most recent research project as an example "Exploiting Structure For Classification Of Handwritten Japanese Characters" (\href{https://github.com/balayanr/kanji_recognition_412}{Github}).
-    \item Additional experiences with \textbf{Machine Learning in Matlab} (statistical machine translation, acoustic perception, Hidden Markov Models, Mixture of Gaussians); limited experience with \textbf{low-level programming in C/C++} (Kernel extensions, file-system manipulation, computer graphics in OpenGL); limited experience with \textbf{Object-Oriented Programming in Java} (Android Application back-end development following the MVC paradigm, JDBM for PostgreSQL); basic \textbf{data analysis in R}.
+    \item
+    Additional experiences with \textbf{Machine Learning in Matlab}
+    (statistical machine translation, acoustic perception, Hidden Markov Models, Mixture of Gaussians);
+    limited experience with \textbf{low-level programming in C/C++}
+    (Kernel extensions, file-system manipulation, computer graphics in OpenGL);
+    %limited experience with \textbf{Object-Oriented Programming in Java}
+    %(Android Application back-end development following the MVC paradigm, JDBM for PostgreSQL);
+    %basic \textbf{data analysis in R}.
     \item Experience designing both discriminative and generative models for image classification, voice recognition and language modeling. Deep understanding of the Machine Learning theory and algorithms, as well as of limitations imposed by hardware.
     \item Experience with machine translation. Implemented IBM Model-1 and trained it on Hansard corpus for English-French translation.
+    \item Interest in Natural Language Processing and Computational linguistics. Familiarity with basics of Information Retrieval, Speech Recognition and Synthesis, Word sense disambiguation, statistical chart parsing disambiguation, and Question Answering.
     \item Experience designing relational databases and implementing them in MySQL, PostgreSQL and SQLite. Experience with \textbf{HDFS and HBase} as part of Hadoop Platform and Application Framework certificaton.
     \item Experience building Context Free Grammars and Automatas for abstractly defined languages as well as approximating natural languages. Experience extending natural language CFGs with features and using these grammars for parsing with \href{http://www.cs.toronto.edu/~gpenn/ale.html}{The Attribute Logic Engine}.
-    %\item Experience analyzing speech recordings using Praat.
+    \item Experience analyzing speech recordings using Praat.
     %\item Experience formatting publications and documents using \LaTeX.
 
 \end{tabitemize}
@@ -107,19 +117,19 @@ Canada}
         \item Developed a parser for the \href{http://etlcdb.db.aist.go.jp/}{ETL} datasets.
         \item Tested 4 different architectures with 2 different goals: direct kanji classification and multilabel classification of radicals that make up the kanji.
         \item Used AWS EC2 p2.xlarge and c4.8xlarge instances to train the models in parallel.
-        \item Compiled the report in \LaTeX, generally following standards used for publication.
+        \item Compiled the report in \LaTeX, generally following standards used for publications.
         \item Published all source code and the report on \href{https://github.com/balayanr/kanji_recognition_412}{Github}
     \end{tabitemize}\\[\vspacepar]
-    CSC384 & Group Research Project: CSP Algorithm Analysis
+    CSC384 & Group Research Project: Constraint Satisfaction Problem Algorithm Analysis
     \begin{tabitemize}
         \item Was the \textit{de facto} team leader
-        \item Provided the team with a selection of algorithms outside of the course's scope that would be interesting to analize. Final selection was iterative improvement, path consistency, and a tree-specific algorithms.
+        \item Provided the team with a selection of algorithms outside of the course's scope that would be interesting to analyze. Final selection was iterative improvement, path consistency, and a tree-specific algorithms.
         \item Regularly checked in on the other member's progress, helped if they had any problems.
         \item Used SVN for subversion controll.
         \item Compiled the report in \LaTeX.
     \end{tabitemize}
     \\[\vspacepar]
-    CSC343 & Solo Project: SQL-based course recommendation engine. \\[\vspacepar]
+    CSC343 & Solo Project: SQL-based course recommendation engine. \href{https://github.com/balayanr/course_recommender_343}{(Github)}\\[\vspacepar]
     CSC321 & Solo Project: Face classification using AlexNet, implemented in TensorFlow. \\[\vspacepar]
 \end{tabularcv}
 
