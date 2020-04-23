@@ -52,7 +52,7 @@
     \item Experienced in Machine Learning, Natural Language Processing and Computational Linguistics, General AI Theory, and Knowledge Representation.
     \item Programming Languages: Python, SQL, PL/pgSQL, C, Java, Matlab, R, \LaTeX.
     \item Natural Languages: English, Russian, Armenian (Conversational), Japanese (Basic).
-    \item Frameworks and tools: NumPy, TensorFlow, keras, AWS, Luigi, Selenium, BeautifulSoup, Docker, Hadoop, NLTK, Django REST.
+    \item Frameworks and tools: NumPy, TensorFlow, keras, AWS, Luigi, Selenium, BeautifulSoup, Kubernetes, Docker, Hadoop, NLTK, Django REST.
     \item Solid mathematical and statistical background.
 \end{tabitemize}
 
@@ -64,7 +64,7 @@
 \begin{tabularcv}
    April 2018 - February 2020       &   \worktitle{Lead AI Engineer}{Kuon Technologies, Japan (クオンテクノロジーズ株式会社)}
                     \newline Lead engineer of the core of the company's main product - Beep Shift, a scheduling AI that assigns part-time employees to the positions required by different businesses. The product is in its final stages of development with further expansion planned to include sales and requirement prediction.
-                    \newline Handled everything related to the AI side of the project: from database architecture and API design to AI development and deployment.
+                    \newline Handled everything related to the AI side of the project: from database architecture and API design to AI development and deployment, project details are further below.
                     \\[\vspacepar]
   November 2019 - Now   & \worktitle{Freelance Software Engineer}{Freelance, Osaka, Japan}
                     \newline I started taking occasional projects that help me learn new tools while fulfilling them. Through them I got proficient at Data Mining and Web scraping, further improved my understanding of Databases, ETL pipelines. Projects themselves are listed further below
@@ -133,17 +133,20 @@
 
 \section*{projects}
 \begin{tabularcv}
-    February 2020 - Now &       Designing and implementing an ETL pipeline for a website that unifies listings from government tender websites.
+    February 2020 - Now &       \textbf{Designing and implementing an ETL pipeline for a website that unifies listings from government tender websites.}
                                 \newline The pipeline is designed around \href{https://luigi.readthedocs.io/en/stable/}{Luigi}, with every website getting a crawler task that would navigate web pages with Selenium, find all new listings and parse them (either with BeautifulSoup, \href{https://github.com/tabulapdf/tabula-java}{Tabula}, or \href{https://github.com/pdfminer/pdfminer.six}{PDFMiner}) and load everything into a database. Deployed on AWS EC2, where the tasks are scheduled with a cron; Database is in PostgreSQL and deployed on AWS. Project is currently in progress, as more websites are added.
     \\[\vspacepar]
-    January 2020 &              Database development for a system used to manage staff, tasks and billing.\newline
+    January 2020 &              \textbf{Database development for a system used to manage staff, tasks and billing.}\newline
                                 Written in PostgreSQL, deployed on AWS, as the rest of the application was using AWS Elastic Beanstalk.
     \\[\vspacepar]
 
-    November 2019 &             Crawling of Hello Work's Job Listings.\newline
+    November 2019 &             \textbf{Crawling of Hello Work's Job Listings.}\newline
                                 A customer who wanted \href{https://www.oshigoto-shokai.jp/}{a page} that only contained listings relevant to their job. \newline
                                 Everything was deployed on AWS Lambda, with functions handling both server-side rendering for pages and crawling. Used BeautifulSoup for page parsing and Selenium to help with navigation, database in PostgreSQL and deployed on AWS.
     \\[\vspacepar]
+
+    June 2018 - January 2020 & \textbf{Beep Shift}\newline
+                                At Kuon Technologies I worked on creating an AI that would assign employees to shifts created by the manager. The shifts were represented as a step curve, with number of people required at each time. The AI would transform that into a Constraint Satisfaction Problem, with time constraints on employees (Overtime, maximum salary, etc) and on the shop (budget, position requirements). The model also allowed for managerial preferences, which the AI interpreted as a selection order via a heuristic function. The project was deployed with Kubernetes and Docker, which allowed the AI to keep the number of running instances to a minimum to handle random requests and ramp up when the demand increased.
 
     CSC412 & Solo Research Project: Exploiting Structure For Classification Of Handwritten Japanese Characters.
     \begin{tabitemize}
