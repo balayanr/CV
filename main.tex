@@ -63,8 +63,8 @@
 % You can use the environment tabitemize to make a bulletpoint list inside the tabularcv environment.
 \begin{tabularcv}
    April 2018 - February 2020       &   \worktitle{Lead AI Engineer}{Kuon Technologies, Osaka, Japan (クオンテクノロジーズ株式会社)}
-                    \newline Lead engineer of the core of the company's main product - Beep Shift, a scheduling AI that assigns part-time employees to the positions required by different businesses. The product is in its final stages of development with further expansion planned to include sales and requirement prediction.
-                    \newline Handled everything related to the AI side of the project: from database architecture and API design to AI development and deployment, project details are further below.
+                    \newline Lead engineer of the AI of the company's main product - Beep Shift, a scheduling AI that assigns part-time employees to the positions required by different businesses. The product is in its final stages of development with further expansion planned to include sales and requirement prediction.
+                    \newline Handled everything related to the AI side of the project: from database architecture and API design to AI development and deployment.
                     \\[\vspacepar]
 %   November 2019 - Now   & \worktitle{Freelance Software Engineer}{Freelance, Osaka, Japan}
 %                     \newline I started taking occasional projects that help me learn new tools while fulfilling them. Through them I got proficient at Data Mining and Web scraping, further improved my understanding of Databases, ETL pipelines. Projects themselves are listed further below
@@ -141,12 +141,12 @@ Projects are explained in greater detail in a section below.
 \begin{tabularcv}
     February 2020 - Now &       \textbf{Web scraping} @ K.K. Tree\newline 
                                 Designed and implemented an ETL pipeline for a website that unifies listings from government tender websites.
-                                The project is designed around \href{https://luigi.readthedocs.io/en/stable/}{\textbf{Luigi}}, which scheduled all tasks to maximize server utilization. Each task handled a different website: loaded and navigated the page with \textbf{Selenium}, parsed the data by locating elements with XPATHs and used \textbf{Tabula} and \textbf{PDFMiner} to extract data from PDFs. The data is then handed back to Luigi in CSV files to be inserted into the \textbf{PostgreSQL database} in batches to optimize load. \textbf{Psycopg2} is used to get data from the database, \textbf{Boto3} is used to talk to AWS S3 to store PDFs and screenshots.
+                                The project is designed around \href{https://luigi.readthedocs.io/en/stable/}{\textbf{Luigi}}, which schedules tasks to maximize server utilization. Each task handled a different website: loaded and navigated the page with \textbf{Selenium}, parsed the data by locating elements with XPATHs and used \textbf{Tabula} and \textbf{PDFMiner} to extract data from PDFs. The data is then handed back to Luigi in CSV files to be inserted into the \textbf{PostgreSQL database} in batches to optimize load. \textbf{Psycopg2} is used to get data from the database, \textbf{Boto3} is used to talk to AWS S3 to store PDFs and screenshots.
                                 % \newline Frameworks and libraries used for the project: Luigi, Selenium, BeautifulSoup, Tabula+Pandas, PDFMiner; Psycopg2 and Boto3. 
                                 \newline Deployed on AWS EC2; Database is in PostgreSQL, deployed on AWS RDS; AWS S3 is used to store files for listings.
     \\[\vspacepar]
-    January 2020 &              \textbf{Database development for a system used to manage staff, tasks and billing.}\newline 
-                                Written in PostgreSQL, deployed on AWS RDS, as the rest of the application was using AWS Elastic Beanstalk.
+    % January 2020 &              \textbf{Database development for a system used to manage staff, tasks and billing.}\newline 
+                                % Written in PostgreSQL, deployed on AWS RDS, as the rest of the application was using AWS Elastic Beanstalk.
     \\[\vspacepar]
 
     November 2019 &             \textbf{Crawling of Hello Work's Job Listings.}\newline 
@@ -155,8 +155,8 @@ Projects are explained in greater detail in a section below.
     \\[\vspacepar]
     
     June 2018 - January 2020 & \textbf{Beep Shift} @ Kuon Technologies\newline 
-                                At Kuon Technologies I worked on creating an AI that would assign employees to shifts created by the manager. The shifts were represented as a step curve, with number of people required at each time. The AI would transform that into a Constraint Satisfaction Problem, with time constraints on employees (Overtime, maximum salary, etc) and on the shop (budget, position requirements). The model also allowed for managerial preferences, which the AI interpreted as a selection order via a heuristic function. Designed the database for the whole application in PostgreSQL.
-                                \newline The AI utilized past sales data to predict future load to better allocate staff to different positions. 
+                                At Kuon Technologies I worked on creating an AI that would assign employees to shifts created by the manager. The shifts were represented as a step curve, with number of people required at each time. The AI would transform that into a Constraint Satisfaction Problem, with time constraints on employees (Overtime, maximum salary, etc) and on the shop (budget, position requirements). The model also allowed for managerial preferences, which the AI interpreted as a selection order via a heuristic function.
+                                \newline Once the AI was ready, our customers provided us with text files with raw receipt printout data, which I had to parse and load into a database, perform feature selection and extraction from the parsed data and create a model that would predict the number of employees required to run the shop.
     \\[\vspacepar]
     CSC412 & \textbf{Solo Research Project: Exploiting Structure For Classification Of Handwritten Japanese Characters.}
     \begin{tabitemize}
@@ -171,8 +171,8 @@ Projects are explained in greater detail in a section below.
         \newline Was the \textit{de facto} team leader: provided the team with a selection of algorithms outside of the course's scope that would be interesting to analyze. Final selection was iterative improvement, path consistency, and a tree-specific algorithms.
         % \item Compiled the report in \LaTeX.
     % \end{tabitemize}
-    \\[\vspacepar]
-    CSC343 & Solo Project: SQL-based course recommendation engine. \href{https://github.com/balayanr/course_recommender_343}{(Github)}\\[\vspacepar]
+    % \\[\vspacepar]
+    % CSC343 & Solo Project: SQL-based course recommendation engine. \href{https://github.com/balayanr/course_recommender_343}{(Github)}\\[\vspacepar]
     % CSC321 & Solo Project: Face classification using AlexNet, implemented in TensorFlow. \\[\vspacepar]
 \end{tabularcv}
 
