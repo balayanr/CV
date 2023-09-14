@@ -13,7 +13,7 @@
 \setlength{\leftcol}{0.22\paperwidth}
 % Height of the header
 \newlength{\hdrheight}
-\setlength{\hdrheight}{38mm}
+\setlength{\hdrheight}{30mm}
 % Vertical space between rows/paragraphs
 \newlength{\vspacepar}
 \setlength{\vspacepar}{0.3\baselineskip}
@@ -74,6 +74,15 @@
     BoldFont = *-SemiBold,
     ]
 
+\newfontfamily{\IPAG}{IPAGothic}[ 
+	Path = Fonts/,
+	Extension = .ttf
+    ]    
+    
+\newfontfamily{\cjk}{AppliMincho}[ 
+	Path = Fonts/,
+	Extension = .otft
+    ]   
 % --------------------------------- %
 %	 			COLORS	 			%
 % --------------------------------- %
@@ -86,7 +95,7 @@
 % --------------------------------- %
 \newcommand{\sep}{\hspace{\hspaddress} | \hspace{\hspaddress}}
 
-\newcommand{\header}[4]{%
+\newcommand{\header}[3]{%
 % #1 First name
 % #2 Last name
 % #3 = Address
@@ -100,9 +109,9 @@
           {\titlefont #1~}{\titlefont \textbf{#2}\par}
           };
     % Address
-    \node[anchor=north, text=lightermain] (address) at (nametext.south)  {#3 \par};
+    % \node[anchor=north, text=white] (address) at (nametext.south)  {#3 \par};
     % Phone/mail/nationality
-    \node[anchor=north, text=lightermain] at (address.south)  {#4};
+    \node[anchor=north, text=white] at (nametext.south)  {#3};
   \end{tikzpicture}
   \vspace{\hdrskip}
 }
