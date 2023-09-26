@@ -22,10 +22,11 @@
 % \sep inserts a | between items. 
 % You can use FontAwesome icons and use \FAspace after a font awesome icon to insert a predefined horizontal space after a font awesome icon icon.
 \header{Robert}{Balayan}
-% {\faMapMarker \hspace{\FAspace} <ADDRESS>}
+% {\faMapMarker \hspace{\FAspace} <ADDRESS> NOTE NEED TO UPDATE THE TEMPLATE}
 {
+\faMapMarker \hspace{\FAspace} Nerima-ku Tokyo-to, Japan \sep 
 \faMobile \hspace{\FAspace} +81 80 7802 6118 \sep 
-\href{mailto:robert@balayanr.com}{\faEnvelope} \hspace{\FAspace} \faSkype\hspace{\FAspace} robert@balayanr.com \sep 
+\href{mailto:robert@balayanr.com}{\faEnvelope} \hspace{\FAspace} robert@balayanr.com \sep 
 \href{https://www.linkedin.com/in/balayanr/}{\faLinkedinSquare} \hspace{\FAspace} \href{https://github.com/balayanr}{\faGithub} \hspace{\FAspace} balayanr \FAspace  %
 }
 % \hypersetup{
@@ -37,10 +38,10 @@
 
 \section*{summary}
 \begin{tabitemize}
-    \item Experienced in developing and deploying web applications with React and Django Rest Framework. Designed and implemented ETL pipelines and web scrapers with a custom framework. Academic experience with Machine Learning, Natural Language Processing and Computational Linguistics, General AI Theory, and Knowledge Representation.
+    \item Experienced in architecting and developing web applications with React and Django Rest Framework. Designed and implemented ETL pipelines and web scrapers with a custom-made framework. Academic experience with Machine Learning, Natural Language Processing and Computational Linguistics, General AI Theory, and Knowledge Representation.
     \item Programming Languages: Python, JavaScript (ES6), SQL, PL/pgSQL, C, Java, Matlab, R.
     \item Natural Languages: English (Native), Russian (Native), Armenian (Conversational), Japanese (Basic).
-    \item Frameworks and tools: Django + Django REST Framework, JavaScript (ES6) + React, AWS, NumPy, TensorFlow, keras, Luigi, Selenium, BeautifulSoup, Kubernetes, Docker, Hadoop, NLTK, \LaTeX, Draw.io for ERD design.
+    \item Frameworks and tools: Django + Django REST Framework, JavaScript (ES6) + React, AWS, NumPy, TensorFlow, keras, Luigi, Selenium, BeautifulSoup, Kubernetes, Docker, Hadoop, NLTK, \LaTeX, Draw.io for ERD design, GitHub for version control, MkDocs.
 \end{tabitemize}
 
 
@@ -49,11 +50,11 @@
 % You can use the command \worktitle{Study name/Job title}{Location}.
 % You can use the environment tabitemize to make a bulletpoint list inside the tabularcv environment.
 \begin{tabularcv}
-  November 2020 - Now   & \worktitle{Principal Engineer}{Genba Systems K.K., Tokyo, Japan  (ゲンバシステムズ株式会社)}
-                    \newline Lead development of a social network for Meiji University's Alumni Association. Handled everything from specification and design to frontend and backend development (React.js and Django REST Framework on AWS). 
+  December 2020 - Now   & \worktitle{Principal Engineer}{Genba Systems K.K., Tokyo, Japan  (ゲンバシステムズ株式会社)}
+                    \newline Lead development of a social network for Meiji University's Alumni Association. Handled everything from specification and design to frontend and backend development (React.js and Django REST Framework on AWS). Was responsible for architecting the entire project from the top.
                     \newline Mentored and trained an engineer to become a Django developer and join the Meiji project.
-                    \newline Lead backend development of \href{https://www.otokun.jp/}{Otokun}, a mobile application for locating campaigns at nearby businesses. The project utilized web scraping, Django + DRF, and Google Maps API. Worked on developing a client-facing administrative portal using React. 
-                    \newline \textit{Relevant skills}: Django + Django REST Framework, React.js (+ HTML and CSS), AWS, PostgreSQL, Mentorship
+                    \newline Lead backend development and deployment of \href{https://www.otokun.jp/}{Otokun}, a mobile application for locating campaigns at nearby businesses. The project utilized web scraping, Django + DRF, and Google Maps API. Worked on developing a client-facing administrative portal using React.
+                    \newline \textit{Relevant skills}: Django + Django REST Framework, React.js (+ HTML and CSS), AWS, PostgreSQL, Mentorship, Web Architecture
                     \\[\vspacepar]
   May 2020 - November 2020   & \worktitle{Lead Software Engineer}{K.K. TREE, Osaka, Japan  (株式会社ＴＲＥＥ)}
                     \newline Lead the team handling web-scraping. Designed an ETL pipeline around the \href{https://luigi.readthedocs.io/en/stable/}{Luigi} framework, which allowed us to maximize server utilization with great scalability as most tasks can run in parallel.
@@ -62,7 +63,7 @@
                     \\[\vspacepar]
    November 2019 - May 2020   & \worktitle{Freelance Software Engineer}{}
                     \newline During my tenure at Kuon Technologies I worked with K.K. TREE on freelance basis before joining them full-time, with a goal of learning new tools. Projects during this period include Database design for a system managing a retirement facility and a system that scraped job listings and displayed them on the client's page.
-                    \newline \textit{Relevant skills}: Python, AWS, PostgreSQL
+                    \newline \textit{Relevant skills}: Python, AWS, PostgreSQL, Web Architecture
                     \\[\vspacepar]
    April 2018 - February 2020       &   \worktitle{Lead AI Engineer}{Kuon Technologies, Osaka, Japan (クオンテクノロジーズ株式会社)}
                     \newline Lead engineer of the AI of the company's main product - Beep Shift, a scheduling AI that assigns part-time employees to the positions required by different businesses. Modeled the problem as a Constraint Satisfaction Problem, which included constraints like various position requirements, employee availabilities and skills, Labor Laws, etc.
@@ -114,8 +115,9 @@ Projects are explained in greater detail in a section below.
 \begin{tabitemize}
     \item 5+ working years of experience \textbf{programming in Python}: from RESTful backend development in Django REST Framework to Neural Networks and Deep Learning using Numpy, TensorFlow and Keras to Chart parsing and word sense disambiguation using NLTK to Data Mining with Selenium and BeautifulSoup. This is my language of choice for work, personal projects and research.
     \item ~3 years of experience with \textbf{JavaScript and React}. When it comes to front end development, React is my framework of choice. Used it to write complex websites from scratch, as well as using templates and component libraries to quickly create usable websites for clients. I always try to use the most recent technologies, so I'm experienced with Functional Components, Hooks and Contexts in React, and my JavaScript experience is predominantly in ES6.
+    \item Web Software Architecture experience - for all projects I saw through their entirety I was responsible for choosing the technology stack and deployment strategy. Depending on the project's scale and expected usage I have deployed projects as server-less, elastic cloud and cloud swarms. Made diagrams, specification documents and MkDocs documentation. Mentored an engineer to become a Django developer.
     \item Experience with a wide variety of servicer across \textbf{AWS}, specifically EC2, S3, RDS and DynamoDB, ECS + ECR, Lambda, CloudFront, SNS, CodePipeline and more. Used it for both professional project deployment and temporary cloud compute for researching Machine Learning models while in University.
-    \item Experience designing both discriminative and generative models for image classification, voice recognition and language modeling. Interest in Natural Language Processing and Computational linguistics. Academic experience with a wide variety of machine learning and AI technologies.
+    \item Experience making discriminative models for image classification, voice recognition and language modeling. Interest in Natural Language Processing and Computational linguistics. Academic experience with a wide variety of machine learning and AI technologies.
     \item Experience designing relational databases and implementing them in PostgreSQL, MySQL and SQLite. Academic experience with HDFS and HBase as part of Hadoop Platform and Application Framework certification.
     \item Experience formatting publications and documents using \LaTeX. 
 
@@ -128,11 +130,11 @@ Projects are explained in greater detail in a section below.
 \begin{tabularcv}
     June 2022 - August 2023 &       \textbf{Otokun} @ Genba Systems K.K.\newline 
                                 Our company was hired by \href{https://www.ology.co.jp/}{K.K. Ology} to work on their mobile application called \href{https://www.otokun.jp/}{Otokun}. I worked on implementing the backend based on the specification provided by the customer, as well as the web portal used by advertisers. For the API I used Django REST Framework, which integrated with Google Maps API to get places data, then match it with chain data and decorate the data with campaign information from our system. Was in constant contact with external mobile and web developers to ensure everybody was up to speed and everything worked as expected.
-                                \newline Everything is deployed on AWS, the backend on ECS, and the Database on EC2 due to custom libraries. 
+                                \newline Deployed on AWS (ECS, Database on EC2); Github and CodeBuild for CI/CD.
                                 \\[\vspacepar]
     December 2020 - June 2022 &       \textbf{Meiji University Graduate Association Social Network} @ Genba Systems K.K.\newline 
                                 The project's goal was to provide Graduate Associations of different regions with a single platform where they could reach their members, as well as provide members with an opportunity to get in touch with any other graduate. Future goals include providing a jobs platform that could be utilized by recruiters and integrating with the Meiji student services. I was responsible for taking CEO's ideas about the platform, designing a realistic specification around it, then implementing it. During this project we hired a recent University graduate, who I mentored to become a Django developer.  
-                                \newline Currently the front end is a PWA implemented using React with an expectation that it will be ported to React Native in the future. The backend was implemented using Django REST Framework to allow for both Web and Mobile Applications to use a single API. Everything is deployed on AWS, with the PWA hosted on S3, the backend on ECS, and the Database on RDS.
+                                \newline Currently the front end is a PWA implemented using React with an expectation that it will be ported to React Native in the future. The backend was implemented using Django REST Framework to allow for both Web and Mobile Applications to use a single API. Everything is deployed on AWS, with the PWA hosted on S3, the backend on ECS, and the Database on RDS, Github and CodeBuild for CI/CD.
                                 \\[\vspacepar]
     February 2020 - November 2020 &       \textbf{Web scraping} @ K.K. Tree\newline 
                                 Designed and implemented an ETL pipeline for a website that unifies listings from government tender websites.
@@ -140,7 +142,7 @@ Projects are explained in greater detail in a section below.
                                 % \newline Frameworks and libraries used for the project: Luigi, Selenium, BeautifulSoup, Tabula+Pandas, PDFMiner; Psycopg2 and Boto3. 
                                 \newline Deployed on AWS EC2; Database is in PostgreSQL on AWS RDS; AWS S3 is used to store files for listings.
     \\[\vspacepar]
-    June 2018 - January 2020 & \textbf{Beep Shift} @ Kuon Technologies\newline 
+    June 2018 - January 2020 & \textbf{beepShift} @ Kuon Technologies\newline 
                                 At Kuon Technologies I worked on creating an AI that would assign employees to shifts created by the manager. The shifts were represented as a step curve, with number of people required at each time. The AI would transform that into a Constraint Satisfaction Problem, with time constraints on employees (Overtime, maximum salary, etc) and on the shop (budget, position requirements). The model also allowed for managerial preferences, which the AI interpreted as a selection order via a heuristic function.
                                 \newline Once the AI was ready, our customers provided us with text files with raw receipt printout data, which I had to parse and load into a database, perform feature selection and extraction from the parsed data and create a model that would predict the number of employees required to run the shop.
     \\[\vspacepar]
@@ -164,7 +166,7 @@ Projects are explained in greater detail in a section below.
 \section*{interests and hobbies}
 % \textbf{Artificial Intelligence}: I have always been interested with AI and inspired by its portrayal in science fiction. It is my dream to work on implementing a general AI. One of the most interesting roadblocks to me is the way humans interact with AI: in science fiction it is almost always seamless, like talking to another person. Personally I have always had interest in Natural Languages, so this is one of the fields I would like to study in depth.\\
 \textbf{Sports}: I am an avid cyclist, gym junkie and hiker. I used to train with the University of Toronto Road Racing team and participate in various local cycling events. Hiked to the top of Mount Fuji, as well as many mountains in Kansai region. \\
-\textbf{Fashion}: I have recently developed an interest in high fashion. Some of my favourite brands are Colina Strada, Maison Margiela, Acne Studios, Online Ceramics, EYTYS and Li-Ning. If an opportunity comes up, I would love to work with a fashion company.
+\textbf{Fashion}: I have recently developed an interest in high fashion. Some of my favourite brands are Colina Strada, Maison Margiela, Acne Studios, Online Ceramics, EYTYS and Li-Ning. I would love to work with a fashion company and learn the trade.
 % \textbf{Traveling}: I enjoy traveling whenever I have the opportunity. I have visited many countries, including Japan, Spain, France, Italy, England, Germany, Egypt, Turkey, Georgia and Armenia. Lately, I have been traveling with my road bike and touring in the places I visit.\\
 % \textbf{GunPla}: One of my favourite hobbies is building plastic model kits. Over time I have built dozens of kits from Mobile Suit Gundam and Warhammer 40K figurines.\\
 % \textbf{Magic the Gathering}: I enjoy the card game as a challenge for building the best deck possible out of limited resources provided. Occasionally participate in tournaments.\\
